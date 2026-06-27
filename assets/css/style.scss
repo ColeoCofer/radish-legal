@@ -1,0 +1,65 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// Radish brand palette — pulled from the app's Theme.swift so the web pages match the app.
+$radish-raspberry:        #CC3B61; // accent (light)
+$radish-raspberry-bright: #E85C82; // accent (dark / hover)
+$radish-raspberry-deep:   #B83255;
+$radish-cream:            #F7F2E7; // background (light)
+$radish-ink:              #2A2A30; // body text on cream
+$radish-charcoal:         #1B1B1F; // background (dark)
+$radish-card-dark:        #2A2A30;
+$radish-rule-dark:        #3C3C45;
+
+// --- Light (default) ---------------------------------------------------------
+.page-header {
+  background-color: $radish-raspberry;
+  background-image: linear-gradient(120deg, $radish-raspberry-bright, $radish-raspberry);
+}
+
+body {
+  background-color: $radish-cream;
+  color: $radish-ink;
+}
+
+a            { color: $radish-raspberry; }
+a:hover      { color: $radish-raspberry-bright; }
+
+.main-content {
+  h1, h2, h3, h4, h5, h6 { color: $radish-ink; }
+  a { color: $radish-raspberry; }
+}
+
+.btn {
+  color: $radish-raspberry;
+  border-color: rgba(204, 59, 97, 0.30);
+  &:hover {
+    color: $radish-raspberry-bright;
+    border-color: rgba(204, 59, 97, 0.55);
+    background-color: rgba(204, 59, 97, 0.08);
+  }
+}
+
+// --- Dark (matches the app's charcoal surfaces) ------------------------------
+@media (prefers-color-scheme: dark) {
+  body { background-color: $radish-charcoal; color: #E8E8EA; }
+
+  .page-header {
+    background-color: $radish-raspberry-deep;
+    background-image: linear-gradient(120deg, $radish-raspberry-bright, $radish-raspberry-deep);
+  }
+
+  .main-content {
+    color: #E8E8EA;
+    h1, h2, h3, h4, h5, h6 { color: #FFFFFF; }
+    a { color: $radish-raspberry-bright; }
+    code, pre { background-color: $radish-card-dark; }
+    table td, table th { border-color: $radish-rule-dark; }
+    blockquote { color: #B9B9BE; border-left-color: $radish-rule-dark; }
+    hr { background-color: $radish-rule-dark; }
+  }
+
+  a { color: $radish-raspberry-bright; }
+}
