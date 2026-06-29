@@ -4,7 +4,7 @@ title: Radish — Support
 
 # Radish — Support
 
-Need a hand with Radish? Email **[coleocofer@gmail.com](mailto:coleocofer@gmail.com)** and I'll get
+Need a hand with Radish? Email **[inductionapps@gmail.com](mailto:inductionapps@gmail.com)** and I'll get
 back to you. You can also send feedback right from the app: **Settings → Send Feedback**.
 
 ## Common questions

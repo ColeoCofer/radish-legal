@@ -107,4 +107,4 @@ same URL. Material changes will be reflected in an app update where appropriate.
 
 Questions about this policy or your privacy in Radish:
 
-**Cole Cofer** — coleocofer@gmail.com
+**Cole Cofer** — inductionapps@gmail.com
